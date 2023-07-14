@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Password </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand:wght@300;700&family=Righteous&display=swap" rel="stylesheet">
+
+	<script type="text/javascript">
+		
+		function checkpassword() {
+			var password = document.getElementById("passwordbox")
+			var passwordText = password.value;
+			if (passwordText == "ILoveLego") {
+				return true;
+			}
+			else{
+				alert("Access Denied")
+				return false;
+			}
+		}
+
+	</script>
+
+	<style type="text/css">
+		
+		h1{
+			font-family: 'Righteous', cursive;
+			font-size: 100px;
+			margin-bottom: 0;
+		}
+
+		h2{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		p{
+			font-family: 'Quicksand', sans-serif;
+			font-size: 20px;
+		}
+
+		a{
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			background-color: #4dafd6;
+			font-size: 30px;
+			border: none;
+			padding: 8px 25px;
+			text-align: center;
+			border-radius: 4px;
+			color: black;
+			text-decoration: none;
+		}
+
+		a:hover{
+			background-color: #3186a8;
+		}
+
+		section.box{
+			text-align: center;
+			margin: 180px;
+		}
+
+		body{
+			background: url(blur.JPEG);
+		}
+
+		input{
+			padding: 7px;
+			border-radius: 4px;
+			border: none;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<section class="welcome box">
+		<h1> Welcome! </h1>
+		<p> Please enter the password to enter the following website. </p>
+		<h2> Password: <input id="passwordbox" type="password"> </h2>
+		<a href="brickypage1.html" onclick="return checkpassword();"> Enter </a>
+	</section>
+
+</body>
+</html>
